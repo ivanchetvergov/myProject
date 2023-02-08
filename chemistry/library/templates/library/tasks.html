@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Библиотека{% endblock %}
+
+{% block content %}
+ <div class="features">
+        <h1>Тут питоним блин</h1>
+        {% for el in task %}
+            <div class ="alert-light">
+                {{ el.full|safe }}
+                <input type="text" id="answer" placeholder="Введите ответ">
+                <input type="submit" value="Submit" /><br></br>
+                <a href="{% url 'library-detail' el.id %}"  class="btn btn-outline-secondary btn-sm">Посмотреть решение</a>
+            </div>
+        {% endfor %}
+        <a href="{% url 'library_home' %}" class="btn btn-warning">Вернуться к списку</a><br><br/>
+
+        <br><br/>
+        <br><br/>
+    </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+    <div class="features">
+        <h1>Библиотека тут</h1>
+        {% for el in text %}
+            <div class ="alert alert-heading">
+                <h3>{{ el.shorts|safe }}</h3>
+                <a href="{% url 'library-detail' el.id %}" class="btn btn-outline-dark">Читать далее</a>
+        </div>
+        {% endfor %}
+        <a href="{% url 'tasks' %}"><li>    Допустим это первый блок с задачачами</li></a>
+        <br><br/>
+        <br><br/>
+        <br><br/>
+    </div>
+{% endblock %}
+

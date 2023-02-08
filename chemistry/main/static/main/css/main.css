@@ -1,0 +1,169 @@
+body {
+    min-height: 100%;
+    background: whitesmoke;
+}
+
+.alert-warning {
+    margin-left: 32%;
+    float: left;
+    clear: both;
+    width: 1300px;
+}
+
+.alert-heading {
+    margin-left: 32%;
+    float: left;
+    clear: both;
+    width: 1300px;
+}
+
+.alert-light {
+    margin-top: 35px;
+}
+
+form {
+    margin-left: 49%;
+    width: 500px;
+    margin-top: 66px;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 43%;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-left: 42%;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: -6px;
+    margin-left: -13%;
+    font-size: 23px;
+}
+
+p {
+    text-align: left;
+    margin-left: 42%;
+    line-height: 19px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-size: 19px;
+}
+
+button {
+    text-align: center;
+    margin-left: 42%;
+    margin-bottom: 15px;
+    margin-top: 20px
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin-left: 42%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.btn-outline-secondary {
+    margin-top: -105px;
+    margin-left: 435px;
+}
+
+
+
+.btn.my-awesome-button {
+    margin-left: -13%;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.btn-outline-dark {
+    margin-left: -13%;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+
+
+.btn-success{
+    margin-left: 4%;
+}
+
+aside {
+    height: 100%;
+    position: fixed;
+    float: left;
+    background: #181818;
+    width: 16%;
+    padding: 2.5%;
+    color: #ffffff;
+    border-right: 5px solid #424242;
+}
+
+aside img {
+    width: 170px;
+    float: left;
+    margin-left: 20px;
+
+}
+
+aside .logo {
+    font-size: 35px;
+    margin-left: 23px;
+    font-weight: bold;
+    position: relative;
+    top: 16px;
+}
+
+aside h1{
+    margin-top: 25px;
+
+}
+
+aside h3 {
+    margin-top: 55px;
+    font-size: 28px;
+    margin-left: 2px;
+}
+
+.link {
+    text-decoration: none;
+    color: #b0c4de;
+    transform: scale(1.05);
+}
+
+aside ul li {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin-top: 10px;
+    transition: transform .4s ease;
+    margin-left: -30px;
+    font-size: 22px;
+}
+
+aside ul li:hover,  aside ul a:hover {
+    color: #b0c4de;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+    float: left;
+    color: black;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+
+
+
+
+

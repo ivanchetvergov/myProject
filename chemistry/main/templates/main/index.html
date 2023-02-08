@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+    <div1 class="features">
+        <h1>Это главная страница сайта.</h1>
+        <p>Этот сайт сделан для подготовки к олимпиадам по химии для 7 и 8 классов.</p>
+        <p>Здесь мы рассказываем про олимпиады по химии и подготовку к ним.</p>
+        <a href="{% url 'theory'  %}" class="btn btn-warning">Приступить к изучению</a>
+        <a href="{% url 'library_home' %}" class="btn btn-danger">Приступить к решению</a>
+        <a href="{% url 'tasks' %}" class="btn btn-warning">Про олимпиады</a>
+    </div1>
+{% endblock %}
