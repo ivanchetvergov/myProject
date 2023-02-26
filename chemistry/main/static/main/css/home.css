@@ -1,0 +1,110 @@
+.main img {
+    margin-left: 14%;
+    margin-top: 6%;
+}
+
+body {
+    background: #27292D;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header-line {
+    align-items: center;
+    margin-left: 79%;
+    margin-top: -47%;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 26px;
+    margin-right: 5%;
+}
+
+
+.text1 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+.text {
+    margin-left: 50%;
+    margin-top: 22%;
+    margin-right: 12%;
+}
+
+.title1 {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 140px;
+    line-height: 165px
+}
+
+.title {
+    margin-left: 50%;
+    margin-top: -26%;
+    margin-right: 15%;
+}
+
+.qwe {
+    text-decoration: none;
+    color: #27292D;
+}
+
+button {
+    margin-left: 50%;
+    margin-top: 17%;
+    --glow-color: whitesmoke;
+    --glow-spread-color: whitesmoke;
+    --enhanced-glow-color: whitesmoke;
+    --btn-color: white;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    font-size: 32px;
+    font-weight: 800;
+    color: #27292D;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 0.1em .1em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.6s;
+}
+
+button::after {
+ pointer-events: none;
+ content: "";
+ position: absolute;
+ top: 120%;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-color: var(--glow-spread-color);
+ filter: blur(2em);
+ opacity: .8;
+ transform: perspective(2em) rotateX(35deg) scale(1, .6);
+}
+
+button:hover {
+ color: var(grey);
+ background-color: var(--glow-color);
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active {
+ box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+

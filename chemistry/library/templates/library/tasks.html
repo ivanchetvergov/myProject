@@ -1,21 +1,27 @@
-{% extends 'main/base.html' %}
+{% extends 'main/new.html' %}
 
 {% block title %}Библиотека{% endblock %}
 
 {% block content %}
  <div class="features">
+        <br></br><br></br>
         <h1>Тут питоним блин</h1>
         {% for el in task %}
-            <div class ="alert-light">
+            <div class ="tasks">
                 {{ el.full|safe }}
-                <input type="text" id="answer" placeholder="Введите ответ">
-                <input type="submit" value="Submit" /><br></br>
-                <a href="{% url 'library-detail' el.id %}"  class="btn btn-outline-secondary btn-sm">Посмотреть решение</a>
+            <section class="section">
+                <input type="text" class="i-1" placeholder="введите ответ">
+                <button class="b-1">ответить</button>
+                <a href="{% url 'library-detail' el.id %}" class="btn-answer">Посмотреть решение</a>
+                <input type="hidden" name="answer" value="{{ el.answer|safe }}">
+                <div class="out-block out-1"></div>
+            </section>
             </div>
+        <br></br>
         {% endfor %}
-        <a href="{% url 'library_home' %}" class="btn btn-warning">Вернуться к списку</a><br><br/>
-
-        <br><br/>
-        <br><br/>
-    </div>
+        <br></br>
+        <a href="{% url 'library_home' %}" class="btn-home">Вернуться к списку</a><br><br/>
+        <br></br><br></br>
+ </div>
 {% endblock %}
+

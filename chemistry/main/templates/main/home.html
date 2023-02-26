@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href ="{% static 'main/css/home.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Home</title>
+</head>
+<body>
+<div class="main">
+    <img src="{% static 'main/img/2.png' %}" alt="">
+</div>
+<div class="header">
+    <div class="container">
+        <div class="header-line">
+
+            <div class="nav">
+                <a class='nav-item' href="{% url 'home' %}"><i class="fa-solid fa-house"></i>          HOME</a>
+                <a class='nav-item' href="{% url 'library_home' %}"><i class="fa-solid fa-folder"></i>          TASKS</a>
+                <a class='nav-item' href="{% url 'theory' %}"><i class="fa-solid fa-book-open"></i>          ABOUT US</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="text">
+
+    <div class="text1">
+        Здесь вы можете ознакомиться с нашим проектом и подготовиться к олимпиадам по химии. Так же блаблаблаблаблаблаблаблаблабла
+    </div>
+</div>
+
+<div class="title">
+    <div class="title1">
+        IMPROVE YOUR SKILL
+    </div>
+</div>
+<button>
+    <a class='qwe' href="{% url 'home' %}">LEARN MORE</a>
+</button>
+
+</button>
+</body>
+</html>

@@ -1,13 +1,13 @@
-{% extends 'main/base.html' %}
+ {% extends 'main/new.html' %}
 
 {% block content %}
     <div class="features">
+        <br></br><br></br>
         <h1>Теория для решения задач </h1>
         {% for el in words %}
-            <div class ="alert alert-heading">
-                <h3>{{ el.name|safe }}</h3>
-                <a href="{% url 'theory-detail' el.id %}" class="btn btn-outline-dark">Читать далее</a>
-        </div>
+            <div class='list-theory'>
+                <a href="{% url 'theory-detail' el.id %}" class="btn btn-outline-dark">{{ el.name|safe }}</a>
+            </div>
         {% endfor %}
     </div>
 {% endblock %}

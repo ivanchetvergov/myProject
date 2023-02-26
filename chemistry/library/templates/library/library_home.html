@@ -1,18 +1,23 @@
-{% extends 'main/base.html' %}
-
+{% extends 'main/new.html' %}
 {% block content %}
     <div class="features">
-        <h1>Библиотека тут</h1>
+        <br></br><br></br>
+        <h1>Здесь задачи по пройденному материалу</h1>
         {% for el in text %}
             <div class ="alert alert-heading">
                 <h3>{{ el.shorts|safe }}</h3>
                 <a href="{% url 'library-detail' el.id %}" class="btn btn-outline-dark">Читать далее</a>
         </div>
         {% endfor %}
-        <a href="{% url 'tasks' %}"><li>    Допустим это первый блок с задачачами</li></a>
-        <br><br/>
-        <br><br/>
-        <br><br/>
+        <div class="list">
+            <h2><i class="fa-solid fa-circle-notch"></i>Первая часть</h2>
+            <div class="el">
+                <a href="{% url 'tasks' %}"><li><i class="fa-solid fa-forward"></i>Первый блок заданий</li></a>
+                <a href="#"><li><i class="fa-solid fa-forward"></i>Второй блок</li></a>
+                <a href="#"><li><i class="fa-solid fa-forward"></i>Третий блок</li></a>
+                <a href="#"><li><i class="fa-solid fa-forward"></i>Все вместе</li></a>
+            </div>
+        </div>
     </div>
 {% endblock %}
-
+<a href="{% url 'tasks' %}"><li>Допустим это первый блок с задачачами</li></a>

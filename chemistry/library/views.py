@@ -9,7 +9,7 @@ def tasks(request):
     return render(request, 'library/tasks.html', {'task': task})
 
 def library_home(request):
-    text = Articles.objects.all()[:0]
+    text = Articles.objects.all()[0:0]
     return render(request, 'library/library_home.html', {'text': text})
 
 def tests(request):

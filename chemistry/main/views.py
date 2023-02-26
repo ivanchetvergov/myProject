@@ -5,6 +5,10 @@ from django.views.generic import DetailView
 
 
 
+def home(request):
+    return render(request, 'main/home.html')
+
+
 def index(request):
     return render(request, 'main/index.html')
 
@@ -18,7 +22,7 @@ class TheoryDetailView(DetailView):
     context_object_name = 'massive'
 
 def links(request):
-    return render(request, 'main/links.html')
+    return render(request, 'main/new.html')
 
 
 def task(request):
