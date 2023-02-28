@@ -215,10 +215,20 @@ input:hover {
     color: white;
 }
 
+.right-answer__border{
+    border-color:green;
+}
+.wrong-answer__border{
+    border-color:red;
+}
 
-
-
-
+.right-answer-container{
+    border: 2px solid green;
+    background-color: #cdffc5;
+    padding: 6px 16px;
+    border-radius: 5px;
+    display: none;
+}
 
 
 
