@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'library',
     'tinymce',
     'django_summernote',
+    'jquery',
 ]
 
 MIDDLEWARE = [

@@ -12,8 +12,9 @@
             <section class="section">
                 <input type="text" class="i-1" placeholder="введите ответ">
                 <button class="b-1">ответить</button>
+                <span class="right-answer-container">Правильный ответ: {{ el.answer|safe }}</span>
                 <a href="{% url 'library-detail' el.id %}" class="btn-answer">Посмотреть решение</a>
-                <input type="hidden" name="answer" value="{{ el.answer|safe }}">
+                <input class="right-answer" type="hidden" name="answer" value="{{ el.answer|safe }}">
                 <div class="out-block out-1"></div>
             </section>
             </div>
