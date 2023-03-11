@@ -1,4 +1,3 @@
-
 import os.path
 from pathlib import Path
 
@@ -165,5 +164,3 @@ TINYMCE_EXTRA_MEDIA = {
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-
-

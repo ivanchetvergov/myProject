@@ -1,21 +1,44 @@
 {% extends 'main/new.html' %}
+{% block tittle %}Задачи{% endblock %}
 {% block content %}
-    <div class="features">
         <br></br><br></br>
-        <h1>Здесь задачи по пройденному материалу</h1>
+        <div class="namyqwe">
+            <h1>Здесь задачи по пройденному материалу</h1>
+        </div>
         {% for el in text %}
             <div class ="alert alert-heading">
                 <h3>{{ el.shorts|safe }}</h3>
                 <a href="{% url 'library-detail' el.id %}" class="btn btn-outline-dark">Читать далее</a>
         </div>
         {% endfor %}
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+                <div class="hamster">
+                    <div class="hamster__body">
+                        <div class="hamster__head">
+                            <div class="hamster__ear"></div>
+                            <div class="hamster__eye"></div>
+                            <div class="hamster__nose"></div>
+                        </div>
+                        <div class="hamster__limb hamster__limb--fr"></div>
+                        <div class="hamster__limb hamster__limb--fl"></div>
+                        <div class="hamster__limb hamster__limb--br"></div>
+                        <div class="hamster__limb hamster__limb--bl"></div>
+                        <div class="hamster__tail"></div>
+                    </div>
+                </div>
+            </div>
         <div class="list">
             <h2><i class="fa-solid fa-circle-notch"></i>Первая часть</h2>
             <div class="el">
-                <a href="{% url 'tasks' %}"><li><i class="fa-solid fa-forward"></i>Первый блок заданий</li></a>
-                <a href="#"><li><i class="fa-solid fa-forward"></i>Второй блок</li></a>
-                <a href="#"><li><i class="fa-solid fa-forward"></i>Третий блок</li></a>
-                <a href="#"><li><i class="fa-solid fa-forward"></i>Все вместе</li></a>
+                <a href="{% url 'tasks' %}"><li><i class="fa-solid fa-forward"></i>Химический элемент и простое вещество</li></a>
+                <a href="{% url 'tasks1' %}"><li><i class="fa-solid fa-forward"></i>Строение атомов и электронных оболочек атомов</li></a>
+                <a href="{% url 'tasks2' %}"><li><i class="fa-solid fa-forward"></i>Происхождения названий химических элементов </li></a>
+                <a href="{% url 'tasks3' %}"><li><i class="fa-solid fa-forward"></i>Периодический закон и Периодическая система элементов</li></a>
+                <a href="{% url 'tasks4' %}"><li><i class="fa-solid fa-forward"></i>Базовые задачи</li></a>
+                <a href="{% url 'tasks5' %}"><li><i class="fa-solid fa-forward"></i>Молекулярные формулы</li></a>
+                <a href="{% url 'tasks6' %}"><li><i class="fa-solid fa-forward"></i>6</li></a>
+                <a href="{% url 'tasks7' %}"><li><i class="fa-solid fa-forward"></i>7</li></a>
             </div>
         </div>
     </div>

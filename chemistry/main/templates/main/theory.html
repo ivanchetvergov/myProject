@@ -1,13 +1,31 @@
  {% extends 'main/new.html' %}
-
+{% block tittle %}Библиотека{% endblock %}
 {% block content %}
     <div class="features">
         <br></br><br></br>
         <h1>Теория для решения задач </h1>
+        <button data-text="Awesome" class="button">
+            <span class="actual-text">&nbsp;Theory&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;Theory&nbsp;</span>
+        </button>
+        <br></br>
         {% for el in words %}
             <div class='list-theory'>
-                <a href="{% url 'theory-detail' el.id %}" class="btn btn-outline-dark">{{ el.name|safe }}</a>
+                 <a href="{% url 'theory-detail' el.id %}">{{ el.name|safe }}</a>
             </div>
         {% endfor %}
+        <div class="container1">
+          <div class="cloud front">
+            <span class="left-front"></span>
+            <span class="right-front"></span>
+          </div>
+          <span class="sun sunshine"></span>
+          <span class="sun"></span>
+          <div class="cloud back">
+            <span class="left-back"></span>
+            <span class="right-back"></span>
+            </div>
+        </div>
     </div>
 {% endblock %}
+

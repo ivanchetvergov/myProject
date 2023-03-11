@@ -3,6 +3,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<title>{% block tittle %} {% endblock %}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href ="{% static 'main/css/new.css' %}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -11,15 +12,15 @@
 </head>
 <body>
 	<div class="menu">
-		<div class="title"><h1>myProject</h1></div>
 		<img src="{% static 'main/img/atom-solid.svg' %}" alt="Лого">
+		<div class="title1"><h1>myProject</h1></div>
 		<div class="list_menu">
 			<ul>
 			<a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i>Главная</li></a>
             <a href="{% url 'task' %}"><li><i class="fa-solid fa-feather"></i>Про олимпиады</li></a>
             <a href="{% url 'theory' %}"><li><i class="fa-solid fa-book-open"></i>Теория</li></a>
-            <a href="{% url 'library_home' %}"><li><i class="fa-solid fa-folder"></i></i>Библиотека</li></a>
-            <a href="{% url 'add' %}"><li><i class="fa-solid fa-plus"></i>Добавить</li></a>
+            <a href="{% url 'library_home' %}"><li><i class="fa-solid fa-folder"></i></i>Задачи</li></a>
+            <a href="{% url 'about-project' %}"><li><i class="fa-solid fa-layer-group"></i>О проекте</li></a>
 			</ul>
 		</div>
 		<div class="footer_menu">

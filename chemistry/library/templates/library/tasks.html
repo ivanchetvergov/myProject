@@ -1,11 +1,34 @@
 {% extends 'main/new.html' %}
 
-{% block title %}Библиотека{% endblock %}
+{% block tittle %}Химический элемент{% endblock %}
+
 
 {% block content %}
  <div class="features">
         <br></br><br></br>
-        <h1>Тут питоним блин</h1>
+        <div class="name1">
+        <h1>Задачи на тему химический элемент и простое вещество</h1>
+        </div>
+        <div class="lamp">
+          <div class="glass">
+            <div class="lava">
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob top"></div>
+              <div class="blob bottom"></div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+          </defs>
+        </svg>
         {% for el in task %}
             <div class ="tasks">
                 {{ el.full|safe }}
@@ -13,16 +36,16 @@
                 <input type="text" class="i-1" placeholder="введите ответ">
                 <button class="b-1">ответить</button>
                 <span class="right-answer-container">Правильный ответ: {{ el.answer|safe }}</span>
-                <a href="{% url 'library-detail' el.id %}" class="btn-answer">Посмотреть решение</a>
                 <input class="right-answer" type="hidden" name="answer" value="{{ el.answer|safe }}">
                 <div class="out-block out-1"></div>
+                <a href="{% url 'library-detail' el.id %}" class="btn-answer">Посмотреть решение</a>
             </section>
             </div>
         <br></br>
         {% endfor %}
+
         <br></br>
         <a href="{% url 'library_home' %}" class="btn-home">Вернуться к списку</a><br><br/>
         <br></br><br></br>
  </div>
 {% endblock %}
-

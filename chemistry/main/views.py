@@ -10,7 +10,7 @@ def home(request):
 
 
 def index(request):
-    return render(request, 'main/index.html')
+    return render(request, 'main/home.html')
 
 def theory(request):
     words = Massive.objects.all()

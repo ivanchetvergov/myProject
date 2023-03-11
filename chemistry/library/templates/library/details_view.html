@@ -1,14 +1,18 @@
-{% extends 'main/base.html' %}
-
-{% block title %}Библиотека{% endblock %}
+{% extends 'main/new.html' %}
+{% block tittle %}Решение{% endblock %}
 
 {% block content %}
     <div class="features">
-        <p>{{ article.full|safe }}</p>
+        <br></br>
+        <div class="detail">
+        <h1>{{ article.shorts|safe }}</h1>
+        <a>{{ article.full|safe }}</a>
         <p>{{ article.decision|safe }}</p>
-        <p>{{ article.answer|safe }}</p>
-        <a href="{% url 'tasks' %}" class="btn btn-outline-danger btn-sm">Вернуться к списку</a>
-        <a href="{% url 'library-update' article.id %}" class="btn btn-outline-info btn-sm">Редактировать</a>
+        <p>Ответ: {{ article.answer|safe }}</p>
+        </div>
+        <br></br>
+        <a href="http://127.0.0.1:8000/library" class="b-1">Вернуться к списку</a>
+        <a href="http://127.0.0.1:8000/theory" class="b-1">Посмтотреть теорию</a>
         <br><br/>
         <br><br/>
     </div>

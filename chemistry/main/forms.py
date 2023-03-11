@@ -6,7 +6,7 @@ from django_summernote.widgets import SummernoteWidget
 class MassiveForm(ModelForm):
     class Meta:
         model = Massive
-        fields = ['name', 'mean']
+        fields = ['name', 'mean', 'source']
         widgets = {
             'shorts': TextInput(attrs={
                 'class': 'form-control',
@@ -15,6 +15,10 @@ class MassiveForm(ModelForm):
             'full': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Введите описание'
+            }),
+            'source': TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': "Введите номер задачи"
             }),
         }
 

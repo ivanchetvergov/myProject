@@ -1,11 +1,14 @@
-{% extends 'main/base.html' %}
+{% extends 'main/new.html' %}
 
 {% block title %}Библиотека{% endblock %}
 
 {% block content %}
+
     <div class="features">
+        <br></br>
         <p>{{ massive.mean|safe }}</p>
-        <a href="{% url 'theory' %}" class="btn btn-warning">Вернуться к списку</a><br><br/>
+        <br></br>
+        <a href="{% url 'theory' %}" class="zxc">Вернуться к списку</a><br><br/>
         <br><br/>
         <br><br/>
     </div>

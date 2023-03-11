@@ -1,11 +1,11 @@
 from django.db import models
 
 class Articles(models.Model):
-    shorts = models.CharField('Название', max_length=250,default='Блок Задание ')
+    shorts = models.CharField('Название', max_length=250, default='Молекулярные формулы ')
     full = models.TextField('Описание')
-    decision = models.TextField('Решение', default='Решение: ')
-    answer = models.CharField('Ответ', max_length=250, default='Ответ: ')
-    key = models.CharField('Ключ', max_length=250, default=1)
+    decision = models.TextField('Решение', default='')
+    answer = models.CharField('Ответ', max_length=250)
+    key = models.CharField('Ключ', max_length=250, default='6')
 
     def __str__(self):
         return self.shorts
